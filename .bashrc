@@ -61,7 +61,7 @@ export WORKON_HOME=~/.envs
 source /usr/bin/virtualenvwrapper.sh
 export EDITOR=vim
 export VISUAL=vim
-export PATH="$PATH:/home/mike/.gem/ruby/2.6.0/bin"
+export PATH="$PATH:/home/mike/.gem/ruby/2.7.0/bin"
 alias config='/usr/bin/git --git-dir=/home/mike/.dotfiles/ --work-tree=/home/mike'
+source /usr/share/bash-complete-alias/complete_alias
 complete -F _complete_alias config
-export BASH_COMPLETION_USER_FILE=/usr/share/bash-complete-alias/complete_alias
