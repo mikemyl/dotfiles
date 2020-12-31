@@ -20,4 +20,5 @@ let g:airline#extensions#hunks#enabled=1
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 nnoremap <Leader>n :NERDTreeFocus<CR>
+au VimEnter *  NERDTree
 set autowrite " write changes when changing buffer
