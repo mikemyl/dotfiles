@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()            
 filetype plugin indent on    " required
@@ -21,4 +22,7 @@ let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 nnoremap <Leader>n :NERDTreeFocus<CR>
 au VimEnter *  NERDTree
+au VimEnter * wincmd p
+au bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let g:ctrlp_cmd = 'CtrlPMixed'
 set autowrite " write changes when changing buffer
