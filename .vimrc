@@ -11,6 +11,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()            
 filetype plugin indent on    " required
@@ -25,6 +26,8 @@ let g:airline#extensions#hunks#enabled=1
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 nnoremap <Leader>n :NERDTreeFocus<CR>
+map <leader>r :NERDTreeFind<cr>
+
 au VimEnter *  NERDTree
 au VimEnter * wincmd p
 au bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
