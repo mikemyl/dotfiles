@@ -36,3 +36,14 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 set autowrite " write changes when changing buffer
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_frontmatter = 1
+
+colorscheme desert
+set guifont=Consolas:h9
+set backspace=indent,eol,start
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set nu
+set ignorecase
+set smartcase
